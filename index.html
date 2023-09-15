@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Meals</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Qwigley&family=Source+Sans+3:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Part -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid container-xl">
+        <img
+          class="navbar-brand"
+          src="./SVG/Hot Meals Logo.svg"
+          alt="Hot Meals Logo"
+          width="185.5px"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" tabindex="-1" id="navbarToggler">
+          <div class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <div
+              class="nav-item me-2 d-flex align-items-center justify-content-center"
+            >
+              <span class="fw-bold me-1">Deliver to:</span>
+              <img src="./SVG/Map.svg" class="me-2" />
+              <span class="open-sans me-1">Current Location</span>
+              <span class="open-sans fw-bold"
+                >Ashok Nagar, Chennai- 600 013</span
+              >
+            </div>
+          </div>
+          <form
+            class="d-flex align-items-center justify-content-center"
+            style="max-width: 1050px"
+            role="search"
+          >
+            <div class="d-flex align-items-center" style="width: 160px">
+              <img src="./SVG/Search.svg" class="me-2" />
+              <input
+                class="form-control-plaintext fw-bold"
+                type="search"
+                placeholder="Search Food"
+              />
+            </div>
+            <button
+              class="btn btn-outline-warning px-4 py-2 d-flex align-items-center fw-bold hover-white"
+              type="submit"
+            >
+              <img src="./SVG/User Icon.svg" class="me-2 my-1" />
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <div class="container-fluid bg-warning opacity-75" style="height: 632px">
+      <div
+        class="d-flex align-items-center justify-content-around flex-wrap custom-align"
+      >
+        <div class="d-flex flex-column">
+          <h1 class="cursive">Look at your fav Meals</h1>
+          <p class="hero-para">
+            Within a few clicks, find meals that are accessible near you
+          </p>
+          <div
+            class="card text-center custom-width-hero-card"
+            style="height: 210px"
+          >
+            <div class="card-body">
+              <ul class="nav nav-pills card-header-pills mx-2">
+                <li class="nav-item me-3">
+                  <button class="hero-button" id="button1">
+                    <i class="fa-solid fa-motorcycle fa-md"></i>
+
+                    Delivery
+                  </button>
+                </li>
+                <li class="nav-item text-center">
+                  <button class="hero-button" id="button2">
+                    <i class="fa-solid fa-bag-shopping fa-md"></i>
+                    Pickup
+                  </button>
+                </li>
+              </ul>
+              <hr class="hero-card-divider" />
+              <div
+                class="d-flex mt-4 align-items-center justify-content-between"
+              >
+                <img
+                  src="./SVG/Map Red.svg"
+                  style="position: relative; left: 32.1px"
+                />
+                <input
+                  type="text"
+                  class="form-control me-3 py-3 ps-5 col open-sans"
+                  placeholder="Enter Your Address"
+                />
+                <button class="hero-search-button">
+                  <img
+                    src="./SVG/Search Icon.svg"
+                    class="me-2"
+                  />
+                  Find Food
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./PNG/Meals.png"
+            class="custom-display"
+            width="500px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- delivery Part -->
+    <div class="container default-section-space">
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <div class="row">
+          <div class="col">
+            <div class="card card-width border-0 mx-auto">
+              <img
+                src="./PNG/Vadai.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Vada</h5>
+                <br />
+                <span class="delivery-time-label">30 min Delivery</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-width border-0 mx-auto">
+              <img
+                src="./PNG/Idly.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Idly</h5>
+                <br />
+                <span class="delivery-time-label">30 min Delivery</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-width border-0 mx-auto">
+              <img
+                src="./PNG/Parotta.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Parotta</h5>
+                <br />
+                <span class="delivery-time-label">30 min Delivery</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-width border-0 mx-auto">
+              <img
+                src="./PNG/Kichadi.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Kichadi</h5>
+                <br />
+                <span class="delivery-time-label">30 min Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- How it works part -->
+    <div class="container default-section-space">
+      <div class="d-flex justify-content-center mb-5">
+        <h1 class="works-heading">How does it work</h1>
+      </div>
+
+      <div
+        class="d-flex justify-content-evenly align-items-center flex-wrap gap-5 p-5 bg-shadow"
+      >
+        <div class="d-flex align-items-center">
+          <img src="./PNG/Discount Icon.png" />
+          <h2 class="works-detail">
+            Daily <br />
+            Discounts
+          </h2>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="./PNG/Live Map Icon.png"  />
+          <h2 class="works-detail">
+            Live <br />
+            Tracing
+          </h2>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="./PNG/Clock Icon.png" />
+          <h2 class="works-detail">
+            Quick <br />
+            Delivery
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Search By food Part -->
+    <div
+      class="container-fluid d-flex default-section-space"
+      style="background-color: #eee7e7; width: 100%; height: 550px"
+    >
+      <div class="d-flex flex-column h-100 px-5 mx-5">
+        <div class="fw-bold fs-1 pt-5 pb-5 mb-5">Search by Food</div>
+        <div
+          class="d-flex justify-content-between text-center gap-md-5"
+        >
+          <div>
+            <img
+              src="./PNG/Dosa.png"
+              class="food-list"
+            />
+            <p class="fs-4 fw-bold" style="color: #424242">Dosa</p>
+          </div>
+          <div>
+            <img
+              src="./PNG/Appam.png"
+              class="food-list"
+            />
+            <p class="fs-4 fw-bold" style="color: #424242">Aappam</p>
+          </div>
+          <div>
+            <img
+              src="./PNG/Puttu.png"
+              class="food-list"
+            />
+            <p class="fs-4 fw-bold" style="color: #424242">Puttu</p>
+          </div>
+          <div>
+            <img
+              src="./PNG/Idiyappam.png"
+              class="food-list"
+            />
+            <p class="fs-4 fw-bold" style="color: #424242">Idiyappam</p>
+          </div>
+          <div>
+            <img
+              src="./PNG/Pongal.png"
+              class="food-list"
+            />
+            <p class="fs-4 fw-bold" style="color: #424242">Pongal</p>
+          </div>
+
+          <div>
+            <img
+              src="./PNG/Veg Rice.png"
+              class="food-list"
+            />
+            <p class="fs-4 fw-bold" style="color: #424242">Veg Rice</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Best deals Part-->
+    <div class="container default-section-space">
+      <div class="d-flex flex-wrap justify-content-center align-items-center">
+        <div class="ms-5 me-5">
+          <h1 class="ms-4 me-5 fs-2 fw-bold">
+            Best deals
+            <span class="text-warning fw-bold"
+              >Crispy <br />
+              Diffen</span
+            >
+          </h1>
+          <p class="ms-4 open-sans best-deals-para">
+            Enjoy the large size of Dosa. Complete <br />
+            perfect slice of Dosa.
+          </p>
+          <button class="best-deals-btn">Proceed to order</button>
+        </div>
+        <div>
+          <img
+            src="./PNG/Crispy Diffen.png"
+            class="best-deals-img"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Popular items Part -->
+    <div class="container default-section-space text-center">
+      <h1 class="mb-5 fw-bold">Popular items</h1>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <div class="row">
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Murukku.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Murukku</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Paniyaram.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Paniyaram</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Seeval Murukku.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Seeval Murukku</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Mixture.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Mixture</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Veg Soup.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Veg Soup</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Gulab Jamun.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Gulab Jamun</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Porivellangai Urundai.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h6 class="card-title fw-bold">Porivellangai Urundai</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Jangri.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Jangri</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Lattu.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Lattu</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border-0 mx-auto"
+              style="width: 220px; margin-bottom: 100px"
+            >
+              <img
+                src="./PNG/Halwa.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Halwa</h5>
+              </div>
+              <button class="btn w-100 border-0 py-2 order-now-btn">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Part-->
+    <footer style="background-color: #090d12; width: 100%">
+      <div class="d-flex flex-wrap footer-height">
+        <div class="horizontal-line">
+          <div
+            class="container text-light d-flex justify-content-around align-items-center footer-small"
+          >
+            <div
+              class="d-flex justify-content-between footer-small-list align-items-start"
+            >
+              <div style="margin-right: 55px">
+                <h5 class="fw-bold mb-4">Company</h5>
+                <ul class="footer-list">
+                  <li>About us</li>
+                  <li>Team</li>
+                  <li>Careers</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <div style="margin-right: 55px">
+                <h5 class="fw-bold mb-4">Contact</h5>
+                <ul class="footer-list">
+                  <li>Help & Support</li>
+                  <li>Partner with us</li>
+                  <li>Ride with us</li>
+                </ul>
+              </div>
+              <div style="margin-right: 55px">
+                <h5 class="fw-bold mb-4">Legal</h5>
+                <ul class="footer-list">
+                  <li>Terms & Conditions</li>
+                  <li>Refund & Cancellation</li>
+                  <li>Privacy Policy</li>
+                  <li>Cookie Policy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="fw-bold text-secondary mb-3 fs-5">Follow Us</div>
+              <div class="d-flex mb-3">
+                <div class="m-2 ms-0">
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #706e6e"
+                  ></i>
+                </div>
+                <div class="m-2">
+                  <i
+                    class="fa-brands fa-facebook fa-lg"
+                    style="color: #706e6e"
+                  ></i>
+                </div>
+                <div class="m-2">
+                  <i
+                    class="fa-brands fa-twitter fa-lg"
+                    style="color: #706e6e"
+                  ></i>
+                </div>
+              </div>
+              <div class="open-sans fw-semibold mb-4" style="color: #c0bebe">
+                Receive exclusive offers in your mailbox
+              </div>
+              <div class="d-flex">
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fa-solid fa-envelope fa-lg"
+                    style="color: #b8b6b6; position: relative; left: 30px"
+                  ></i>
+                  <input
+                    type="text"
+                    class="form-control bg-secondary border-0 py-2 px-5 me-3"
+                    placeholder="Enter Your email"
+                  />
+                </div>
+
+                <button
+                  class="btn btn-warning text-light fw-bold px-4 py-2"
+                  style="
+                    box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29),
+                      0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+                  "
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between py-5 open-sans"
+        style="margin: 0px 100px"
+      >
+        <div class="text-light">
+          <p>All rights Reserved <span> ©</span></p>
+        </div>
+        <div class="text-light">
+          Made with <i class="fa-solid fa-heart" style="color: #f0b129"></i> by
+          <span class="fw-bold">Kamalesh S</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f645219976.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
