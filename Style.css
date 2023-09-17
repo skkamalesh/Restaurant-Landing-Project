@@ -41,14 +41,14 @@
 .hero-search-button {
   padding: 15px 48px;
   border-radius: 8px;
-  background: linear-gradient(96deg, #ff7a7a -39.64%, #f65900 135.31%);
+  background: linear-gradient(96deg, #ff0000 -39.64%, #f65900 135.31%);
   border: none;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
 }
 .hero-search-button:hover {
-  background: #fd7120c1;
+  background: #ff5e00c1;
 }
 .hero-card-divider {
   color: rgba(128, 128, 128, 0.541);
@@ -143,7 +143,7 @@ body {
   font-size: 33px;
   font-weight: 700;
   line-height: 42px;
-  background: linear-gradient(93deg, #fb3c00 -47.72%, #ffb800 136.81%);
+  background: linear-gradient(93deg, #fc3e05 -47.72%, #dba212 136.81%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -211,7 +211,7 @@ body {
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(93deg, #ffb800 -47.72%, #ff8a00 136.81%);
+    background: linear-gradient(93deg, #ffb700 -47.72%, #ff8800 136.81%);
     box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29),
       0px 5px 8px 0px rgba(222, 151, 0, 0.24);
   }
